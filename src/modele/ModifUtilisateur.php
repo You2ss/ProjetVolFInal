@@ -8,8 +8,8 @@ class ModifUtilisateur
     private $mot_de_passe;
 
     public function setUpdate(){
-        $bdd = new BDD();
-        $req = $bdd->setPdo()->prepare('Update client set nom = :nom,email = :email,mot_de_passe = :mot_de_passe where id= :id');
+        $bdd = new Bdd();
+        $req = $bdd->setPdo()->prepare('Update users set nom = :nom,email = :email,mot_de_passe = :mot_de_passe where id= :id');
         $req->execute(array(
             'id' => $this->getId(),
             'nom' => $this->getNom(),

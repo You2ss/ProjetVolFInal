@@ -22,7 +22,7 @@ class User
     public function setConnexion($email, $mdp)
     {
         $bdd = new BDD();
-        $req= $bdd->getBdd()->prepare('SELECT * FROM user email = :email AND mdp = :mdp');
+        $req= $bdd->getBdd()->prepare('SELECT * FROM users email = :email AND mdp = :mdp');
         $req->execute(array(
             'email' => $this->email = $email ,
             'mdp' => $this->mdp = $mdp

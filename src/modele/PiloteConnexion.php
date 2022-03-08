@@ -14,7 +14,7 @@ class PiloteConnexion
     public function setConnexion()
     {
         session_start();
-        $bdd = new BDD();
+        $bdd = new Bdd();
         $req = $bdd->setPdo()->prepare('SELECT * FROM pilote WHERE nom = :nom AND prenom = :prenom');
         $req->execute(array(
             'nom' => $this->getNom(),
