@@ -1,6 +1,6 @@
 <?php
-require_once 'src/bdd/Bdd.php';
-require_once 'src/modele/Vol.php';
+require_once '../../src/bdd/Bdd.php';
+require_once '../../src/modele/Vol.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ require_once 'src/modele/Vol.php';
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../../css/styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
 
@@ -40,9 +40,9 @@ require_once 'src/modele/Vol.php';
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="admin/admin.php">Acceuil ADMIN</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="scr/traitement/update_vol.php">Modifier</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="scr/traitement/suppression_vol.php">Supprimer</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../../src/admin/admin.php">Acceuil ADMIN</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../../src/traitement/update_vol.php">Modifier</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../../src/traitement/suppression_vol.php">Supprimer</a></li>
             </ul>
         </div>
     </div>
@@ -63,7 +63,7 @@ require_once 'src/modele/Vol.php';
         <p class="masthead-subheading font-weight-light mb-0"></p>
     </div>
 </header>
-<form action="scr/Traitement/traitement_vol.php" method="post" class="main-form">
+<form action="../../src/traitement/traitement_vol.php" method="post" class="main-form">
     <h3>Insérer votre vol</h3>
     <div class="row">
 
@@ -91,7 +91,7 @@ require_once 'src/modele/Vol.php';
 
                         <option value="">--Choisissez un pilote--</option>
                         <?php
-                        require_once 'scr/Modele/Pilote.php';
+                        require_once '../../src/modele/Pilote.php';
                         $bdd = new Bdd();
                         $pilote = new Pilote();
 
@@ -109,7 +109,7 @@ require_once 'src/modele/Vol.php';
                     <select class="js-example-basic-single" name="ref_avion">
                         <option value="">--Choisissez un avion--</option>
                         <?php
-                        require_once 'scr/Modele/Avion.php';
+                        require_once '../../src/modele/Avion.php';
                         $bdd = new Bdd();
                         $avion = new Avion();
                         $avion = $avion->AfficherAvion($avion);

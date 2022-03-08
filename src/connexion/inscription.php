@@ -42,7 +42,7 @@ if(isset($_POST['valider'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'Confirmation d\email';
-                $mail->Body = 'http://localhost/ProjetVol/scr/traitement/user/verif/verif.php?id='.$_SESSION['id'].'&cle='.$cle;
+                $mail->Body = 'http://localhost/ProjetVolFinal/src/connexion/verif.php?id='.$_SESSION['id'].'&cle='.$cle;
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                 $mail->send();
@@ -77,7 +77,7 @@ if(isset($_POST['valider'])) {
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
                 <h2 class="heading-section">Page d'Inscription</h2>
-                <li><a href="../../scr/Connexion/connexion.php">Connexion</a></li>
+                <li><a href="../../src/connexion/connexion.php">Connexion</a></li>
             </div>
         </div>
         <center>

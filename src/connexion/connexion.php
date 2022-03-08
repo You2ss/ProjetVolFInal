@@ -9,10 +9,10 @@ if(isset($_POST['valider'])) {
             $userInfo = $recuperUser->fetch();
             if($userInfo['confirme'] == 1){
                 if($userInfo['admin'] ==1){     //rediriger vers page admin
-                    header('Location: ../src/admin/admin.php');
+                    header('Location: ../../src/admin/admin.php');
                 }
                 else{
-                    header('Location: ../index.php');
+                    header('Location: ../../index.php');
                 }
             }
             else {

@@ -1,6 +1,6 @@
 <?php
 
-class Bdd_
+class Bdd
 {
     private $bdd;
 

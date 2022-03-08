@@ -5,7 +5,7 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
 </head>
 <body>
-<li><a href="../../admin/admin.php">Acceuil ADMIN</a></li>
+<li><a href="../../src/admin/admin.php">Acceuil ADMIN</a></li>
 <br>
 <br>
 <table id="table_id" class="display">
@@ -20,8 +20,8 @@
     </thead>
     <tbody>
     <?php
-    require_once 'src/bdd/Bdd_.php';
-    require_once 'src/modele/Vol_2.php';
+    require_once '../../src/bdd/Bdd2.php';
+    require_once '../../src/modele/Vol_2.php';
 
     $vol = new Vol(array());
     foreach ($vol->setSelect() as $values){

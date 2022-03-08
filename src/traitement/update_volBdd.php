@@ -1,6 +1,6 @@
 <?php
-require_once 'src/bdd/Bdd.php';
-require_once 'src/modele/Vol.php';
+require_once '../../src/bdd/Bdd.php';
+require_once '../../src/modele/Vol.php';
 
 
 $vol = new Vol(array(
@@ -13,6 +13,6 @@ $vol = new Vol(array(
 ));
 $bdd = new Bdd();
 $vol->addVol();
-header('Location: ../../index-2.php');
+header('Location: ../../src/admin/index-A.php');
 ?>
 

@@ -28,7 +28,7 @@
     <div class="admin-section admin-section1 ">
         <ul>
             <li><i class="fas fa-sliders-h"></i><a href="../../index.php">Acceuil Site de bord</a><i class="fas admin-dropdown fa-chevron-right"></i></li>
-            <li><i class="fas fa-ticket-alt"></i><a href="../../index-2.php">[VOL]Ajout/Modification/Suppression</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
+            <li><i class="fas fa-ticket-alt"></i><a href="../../src/admin/index-A.php">[VOL]Ajout/Modification/Suppression</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
             <l
 
             </ul>
@@ -67,7 +67,7 @@
                     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
                 </head>
                 <body>
-                <li><a href="../../scr/traitement/Datatable.php">Agrandir la fenetre</a></li>
+                <li><a href="../../src/traitement/datatable.php">Agrandir la fenetre</a></li>
                 <br>
                 <br>
                 <table id="table_id" class="display">
@@ -82,8 +82,8 @@
                     </thead>
                     <tbody>
                     <?php
-                    require_once '../BDD/Bdd2.php';
-                    require_once '../Modele/Vol2.php';
+                    require_once '../../src/bdd/Bdd2.php';
+                    require_once '../../src/modele/Vol_2.php';
 
                     $vol = new Vol(array());
                     foreach ($vol->setSelect() as $values){
