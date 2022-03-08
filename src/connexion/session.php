@@ -2,11 +2,9 @@
 
 if(date("H")<18)
     $bienvenue="Bonjour et bienvenue ".
-        $_SESSION["prenomNom"].
         " dans votre espace personnel";
 else
     $bienvenue="Bonsoir et bienvenue ".
-        $_SESSION["prenomNom"].
         " dans votre espace personnel";
 ?>
 <!DOCTYPE html>
@@ -32,6 +30,7 @@ else
 <body onLoad="document.fo.login.focus()">
 <h2><?php echo $bienvenue?></h2>
 [ <a href="../../index.php">Acceuil</a> ]
+[ <a href="../../src/connexion/modifier.php">Modifier son profil</a> ]
 [ <a href="../../src/connexion/logout.php">Se déconnecter</a> ]
 </body>
 </html>

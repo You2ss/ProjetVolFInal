@@ -70,9 +70,44 @@ session_start()
 <br>
 
 <footer>
+    <h3>Vol déjà réaliser</h3>
+    <table id="table_id" class="display">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date depart</th>
+            <th>Heure depart</th>
+            <th>Heure d'arrivee</th>
+            <th>Le pilote</th>
+            <th>L'avion</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        require_once '../../src/bdd/Bdd2.php';
+        require_once '../../src/modele/Vol_2.php';
+
+        $vol = new Vol(array());
+        foreach ($vol->setSelect() as $values){
+            ?>
+            <tr>
+                <td><?php echo $values['id_vol']?></td>
+                <td><?php echo $values['date_depart']?></td>
+                <td><?php  echo $values['heure_depart'] ?></td>
+                <td><?php  echo $values['heure_arrivee'] ?></td>
+                <td><?php  echo $values['ref_pilote'] ?></td>
+                <td><?php  echo $values['ref_avion'] ?></td>
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
+    <script>$(document).ready( function () {
+            $('#table_id').DataTable();
+        } );</script>
+
 
 </footer>
-<!-- end footer -->
+
 <!-- Javascript files-->
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/popper.min.js"></script>

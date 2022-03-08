@@ -9,12 +9,12 @@ class ModifUtilisateur
 
     public function setUpdate(){
         $bdd = new Bdd();
-        $req = $bdd->setPdo()->prepare('Update users set nom = :nom,email = :email,mot_de_passe = :mot_de_passe where id= :id');
+        $req = $bdd->setPdo()->prepare('Update users set nom = :nom,email = :email,mdp = :mdp where id= :id');
         $req->execute(array(
             'id' => $this->getId(),
             'nom' => $this->getNom(),
             'email' => $this->getEmail(),
-            'mot_de_passe' => $this->getMotDePasse(),
+            'mdp' => $this->getMotDePasse(),
         ));
     }
 

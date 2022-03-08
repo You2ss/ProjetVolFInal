@@ -49,6 +49,7 @@ if(isset($_POST['valider'])) {
             <div class="col-md-6 text-center mb-5">
                 <h2 class="heading-section">Page de Connexion</h2>
                 <li><a href="../../src/connexion/inscription.php">Inscription</a></li>
+                <li><a href="../../index.php">Acceuil</a></li>
             </div>
         </div>
         <center>

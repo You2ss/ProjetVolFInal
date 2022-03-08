@@ -6,4 +6,4 @@ $delete = new Delete(array(
 ));
 
 $delete->getDelete();
-header('Location: ../../src/admin/index-A.php');
+header('Location: ../../src/traitement/suppression_vol.php');
