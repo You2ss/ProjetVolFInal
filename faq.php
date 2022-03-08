@@ -115,7 +115,7 @@
                 <div class="menu-wrap">
                     <div class="main-menu">
                         <ul>
-                            <li><a href="index.php">Acceuil <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Acceuil <i class="fas fa-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="Maintenance.html">Voyages</a></li>
                                     <li><a href="Maintenance.html">Reserver</a></li>
@@ -128,14 +128,18 @@
                                 </ul>
                             </li>
                             <li><a href="Maintenance.html">News</a></li>
-                            <li><a href="Maintenance.html">Services</a></li>
                             <li><a href="faq.php">FAQ</a> </li>
                             <li><a href="contact.php">Contact</a></li>
+                            <li><a href="#">Inscription <i class="fas fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="src/connexion/inscription.php">S'inscrire maintenant !</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="header-right-element">
-                    <a href="vue/login.php" class="theme-btn">Connexion <i class="fal fa-long-arrow-right"></i></a>
+                    <a href="src/connexion/connexion.php" class="theme-btn">Connexion <i class="fal fa-long-arrow-right"></i></a>
                     <a href="#" class="search-btn"><i class="fal fa-search"></i></a>
                     <div class="search-box">
                         <form action="#">
