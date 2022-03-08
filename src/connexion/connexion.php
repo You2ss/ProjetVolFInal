@@ -9,10 +9,10 @@ if(isset($_POST['valider'])) {
             $userInfo = $recuperUser->fetch();
             if($userInfo['confirme'] == 1){
                 if($userInfo['admin'] ==1){     //rediriger vers page admin
-                    header('Location: admin/admin.php');
+                    header('Location: ../src/admin/admin.php');
                 }
                 else{
-                    header('Location: ../../index.php');
+                    header('Location: ../index.php');
                 }
             }
             else {
@@ -48,7 +48,7 @@ if(isset($_POST['valider'])) {
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
                 <h2 class="heading-section">Page de Connexion</h2>
-                <li><a href="../../scr/Connexion/Incription.php">Inscription</a></li>
+                <li><a href="../../src/connexion/inscription.php">Inscription</a></li>
             </div>
         </div>
         <center>

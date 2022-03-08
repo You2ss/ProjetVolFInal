@@ -1,6 +1,6 @@
 <?php
-require_once 'scr/BDD/Bdd.php';
-require_once 'scr/Modele/Vol.php';
+require_once 'src/bdd/Bdd.php';
+require_once 'src/modele/Vol.php';
 ?>
 
 <!DOCTYPE html>

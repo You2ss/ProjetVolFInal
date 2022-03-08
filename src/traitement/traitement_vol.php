@@ -1,6 +1,6 @@
 <?php
-require_once '../BDD/Bdd.php';
-require_once '../Modele/Vol.php';
+require_once 'src/bdd/Bdd.php';
+require_once 'src/modele/Vol.php';
 
 $ajouter = new Vol(array(   //setters
 

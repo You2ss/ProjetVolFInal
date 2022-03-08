@@ -20,8 +20,8 @@
     </thead>
     <tbody>
     <?php
-    require_once '../BDD/Bdd2.php';
-    require_once '../Modele/Vol2.php';
+    require_once 'src/bdd/Bdd_.php';
+    require_once 'src/modele/Vol_2.php';
 
     $vol = new Vol(array());
     foreach ($vol->setSelect() as $values){
