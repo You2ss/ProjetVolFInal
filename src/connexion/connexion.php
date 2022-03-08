@@ -12,7 +12,7 @@ if(isset($_POST['valider'])) {
                     header('Location: ../../src/admin/admin.php');
                 }
                 else{
-                    header('Location: ../../index.php');
+                    header('Location: ../../src/connexion/session.php');
                 }
             }
             else {
