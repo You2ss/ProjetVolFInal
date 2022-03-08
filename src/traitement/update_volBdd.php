@@ -11,4 +11,4 @@ $modifier = new Update(array(
 ));
 
 $modifier->getUpdate();
-header('Location: ../../index.php');
+header('Location: ../../src/traitement/update_vol.php');

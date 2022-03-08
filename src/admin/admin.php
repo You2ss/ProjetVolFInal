@@ -29,6 +29,10 @@
         <ul>
             <li><i class="fas fa-sliders-h"></i><a href="../../index.php">Acceuil Site de bord</a><i class="fas admin-dropdown fa-chevron-right"></i></li>
             <li><i class="fas fa-ticket-alt"></i><a href="../../src/admin/index-A.php">[VOL]Ajout/Modification/Suppression</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
+            <li><i class="fas fa-ticket-alt"></i><a href="../../src/traitement/avion.php">Selectionner les AVIONS</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
+            <li><i class="fas fa-ticket-alt"></i><a href="../../src/traitement/pilote.php">Selectionner les PILOTES</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
+            <li><i class="fas fa-ticket-alt"></i><a href="../../Maintenance.html">Modifier les AVION</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
+            <li><i class="fas fa-ticket-alt"></i><a href="../../Maintenance.html">Modifier les PILOTES</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
             <l
 
             </ul>

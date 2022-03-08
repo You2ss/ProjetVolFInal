@@ -88,7 +88,7 @@ if(isset($_POST['valider'])) {
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="fa fa-user-o"></span>
                         </div>
-
+<hr>
                         <h3 class="text-center mb-4">Inscrivez-vous</h3>
                         <form method="POST" action="">
 
