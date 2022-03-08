@@ -12,11 +12,11 @@ if(isset($_GET['id']) AND !empty($_GET['id']) AND isset($_GET['cle']) AND !empty
             $updateConfimation = $bdd->prepare('UPDATE users SET confirme = ? WHERE id = ?');
             $updateConfimation->execute(array(1, $getid));
             $_SESSION ['cle'] = $getcle;
-            header('Location: ../../index.php');
+            header('Location:  ../../src/connexion/session.php');
         }
         else{
             $_SESSION ['cle'] = $getcle;
-            header('Location: ../../index.php');
+            header('Location:  ../../src/connexion/session.php');
         }
     }
     else{
